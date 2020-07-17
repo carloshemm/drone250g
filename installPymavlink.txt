@@ -1,0 +1,21 @@
+#Comunicar o raspberry com o controlador de voo
+
+ https://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html
+ 
+ Este tutorial é bom para ser seguido, mas na instalação do pymavlink a melhor opção, é fazer build e install a partir do git
+ 
+ $git clone https://github.com/ArduPilot/MAVProxy.git
+ 
+ $cd MAVProxy
+ 
+ $pip install -r requirements.txt ##Para os requisitos pode-se seguir o tutorial
+ 
+ $sudo python setup.py build
+ 
+ $sudo python setup.py install
+ 
+ e testar a instalação com 
+ 
+ $sudo mavproxy.py --master=/dev/serial0 --baudrate 921600 --aircraft MyCopter
+ 
+ $sudo mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600 --aircraft MyCopter
