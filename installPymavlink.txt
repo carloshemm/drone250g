@@ -4,6 +4,11 @@
  
  Este tutorial é bom para ser seguido, mas na instalação do pymavlink a melhor opção, é fazer build e install a partir do git
  
+ #Requisitos para instalar o Mavproxy
+ $sudo dnf install python3-devel python3-opencv python3-wxpython4 python3-pip python3-matplotlib python3-pygame python3-lxml python3-yaml redhat-rpm-config
+ $sudo apt-get install libxml2-dev libxslt-dev python-dev
+ $pip install lxml --user
+
  $git clone https://github.com/ArduPilot/MAVProxy.git
  
  $cd MAVProxy
