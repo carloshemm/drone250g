@@ -14,9 +14,10 @@ os.mkdir(dir)
 
 
 with picamera.PiCamera() as camera:
-    camera.resolution = (3280,2464)
+    #camera.resolution = (3280,2464) #Para camera versão 2
+    camera.resolution = (2592,1944) #Para camera versão 1.2
     camera.iso = 400
     for i in range(210):
-	print("photo %s taken"%i)
-        camera.capture(dir+"/image%s.jpg"%i)
+	print(f"photo {string(i)} taken")
+        camera.capture(dir+f"/image{string(i)}.jpg")
 	time.sleep(2)
