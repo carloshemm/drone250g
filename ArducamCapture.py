@@ -45,4 +45,4 @@ if __name__ == "__main__":
     print("Close camera...")
     camera.close_camera()
   except Exception as e:
-    print(e) import arducam_mipicamera as arducam 
+    print(e)
